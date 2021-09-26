@@ -6,4 +6,141 @@
     android:layout_height="match_parent"
     tools:context=".MainCadAnimal">
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="178dp"
+        android:layout_height="150dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.514"
+        app:srcCompat="@drawable/vaquinha" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Cadastro"
+        android:textColor="#673AB7"
+        android:textSize="70sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nome"
+        android:layout_width="315dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="76dp"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/peso"
+        android:layout_width="315dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Peso"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idade" />
+
+    <EditText
+        android:id="@+id/raca"
+        android:layout_width="315dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Raça"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/peso" />
+
+    <EditText
+        android:id="@+id/mae"
+        android:layout_width="315dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Nome da mãe"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pai" />
+
+    <EditText
+        android:id="@+id/pai"
+        android:layout_width="315dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Nome do Pai"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/raca" />
+
+    <EditText
+        android:id="@+id/idade"
+        android:layout_width="150dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Idade"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nome" />
+
+    <EditText
+        android:id="@+id/sexo"
+        android:layout_width="150dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Sexo"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintStart_toEndOf="@+id/idade"
+        app:layout_constraintTop_toBottomOf="@+id/nome" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Novo Cadastro"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/finalizar_cadastro"
+        android:layout_width="338dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="32dp"
+        android:text="Cadastrar"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mae" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().hide();
 
         TextView user = findViewById(R.id.usuario);
         TextView password = findViewById(R.id.senha);
@@ -32,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     public void validate(String user, String senha){
         TextView texto = findViewById(R.id.erro);
         if (user.toLowerCase(Locale.ROOT).equals("admin") && senha.equals("admin")){
-            Intent intent = new Intent(MainActivity.this, menu.class);
+            Intent intent = new Intent(MainActivity.this, MainMenu.class);
             startActivity(intent);
         }
         else{

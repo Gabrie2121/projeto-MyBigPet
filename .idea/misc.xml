@@ -6,8 +6,12 @@
         <entry key="..\:/Users/gabri/AndroidStudioProjects/MyBigPet/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.4816326530612245" />
         <entry key="..\:/Users/gabri/AndroidStudioProjects/MyBigPet/app/src/main/res/layout-w936dp/activity_login.xml" value="0.2765625" />
         <entry key="..\:/Users/gabri/AndroidStudioProjects/MyBigPet/app/src/main/res/layout/activity_animal_list.xml" value="0.36875" />
+        <entry key="..\:/Users/gabri/AndroidStudioProjects/MyBigPet/app/src/main/res/layout/activity_cadanimal.xml" value="0.33" />
+        <entry key="..\:/Users/gabri/AndroidStudioProjects/MyBigPet/app/src/main/res/layout/activity_lista.xml" value="0.33" />
         <entry key="..\:/Users/gabri/AndroidStudioProjects/MyBigPet/app/src/main/res/layout/activity_login.xml" value="0.36875" />
         <entry key="..\:/Users/gabri/AndroidStudioProjects/MyBigPet/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/gabri/AndroidStudioProjects/MyBigPet/app/src/main/res/layout/activity_main_list.xml" value="0.36875" />
+        <entry key="..\:/Users/gabri/AndroidStudioProjects/MyBigPet/app/src/main/res/layout/activity_menu.xml" value="0.36875" />
       </map>
     </option>
   </component>
