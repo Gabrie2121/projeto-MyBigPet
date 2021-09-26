@@ -2,6 +2,7 @@ package com.example.mybigpet;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.database.SQLException;
 import android.os.Bundle;
 import android.util.Log;
@@ -17,10 +18,17 @@ public class MainCadAnimal extends AppCompatActivity {
         setContentView(R.layout.activity_cadanimal);
         getSupportActionBar().hide();
         Button cadastro = findViewById(R.id.finalizar_cadastro);
+        Button cancelar = findViewById(R.id.cancelar);
         cadastro.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 save_db();
+            }
+        });
+        cancelar.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                exit();
             }
         });
     }
@@ -43,10 +51,15 @@ public class MainCadAnimal extends AppCompatActivity {
             objAnimal.setRaca(raca.getText().toString());
             objAnimal.setMae(mae.getText().toString());
             objAnimal.setPai(pai.getText().toString());
-            appDataBase.insert("animais",objAnimal);
+
+            appDataBase.insertion("animais",objAnimal);
         }
         catch(SQLException e){
             Log.e("DB_LOG","onCreate:"+e.getLocalizedMessage()  );
         }
+    }
+    public void exit(){
+        Intent intent = new Intent(MainCadAnimal.this, MainMenu.class);
+        startActivity(intent);
     }
 }

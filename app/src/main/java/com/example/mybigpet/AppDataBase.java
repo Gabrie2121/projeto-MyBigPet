@@ -42,7 +42,7 @@ public class AppDataBase extends SQLiteOpenHelper {
 
     }
     //INSERT INTO TABLE values (...)
-    public boolean insert(String tabela,Animal dados){
+    public boolean insertion(String tabela,Animal dados){
         ContentValues values = new ContentValues();
 
         values.put("nome",dados.getNome());
